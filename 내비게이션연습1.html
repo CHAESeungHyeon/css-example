@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 노멀라이즈 */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* ====================================== */
+    nav {
+      width: 100%;
+      min-width: 1120px;/*최소넓이를 1120px로 설정*/
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    nav>.container {
+      width: 1080px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    nav ul.gnb {
+      float: left;
+    }
+
+    nav .search {
+      float: right;
+    }
+
+    /* 메뉴아이템 정렬 */
+    nav li {
+      float: left;
+      font-size: 18px;
+      margin-right: 60px;
+      user-select: none;
+      /*글자 선택을 막아주는 속성*/
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 내비의 넓이는 100% -->
+  <nav>
+    <!-- container의 넓이는 1080px이고 가운데 정렬 -->
+    <div class="container clearfix">
+      <ul clas="gnb">
+        <li><a href="#">SMAMMAH</a></li>
+        <li><a href="#">ABOUT</li>
+        <li><a href="#">NEWS</li>
+        <li><a href="#">PORTFOLIO</li>
+        <li><a href="#">BOARD</li>
+        <li><a href="#">ALBUM</li>
+        <li><a href="#">CONTACT</li>
+      </ul>
+      <div class="search"><img src="images/search.png"></div>
+    </div>
+  </nav>
+</body>
+
+</html>
