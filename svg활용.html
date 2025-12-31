@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg활용</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+    article {
+      width: 500px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      padding: 50px;
+      margin: auto;
+    }
+    
+    article svg {
+      width: 100%;
+      
+    }
+    
+    /*path속성 바꾸기*/
+    article svg path {
+      fill: transparent;
+      /*면색*/
+      stroke: red;
+      /*선색*/
+      stroke-width: 10;
+      /*선의 두께*/
+      stroke-dasharray: 1200;
+      /*점선의 길이*/
+      stroke-dashoffset: -1200;
+      /*점선의 시작점 위치를 변경*/
+      transition: all 3s;
+      /*변환효과*/
+    }
+    
+    article:hover svg path {
+      stroke-dashoffset: 0;
+    }
+    section svg text{stroke-dasharray: 260; stroke-dashoffset: -260; transition: 3s;}
+    section:hover svg text{stroke-dashoffset: 0;}
+
+</style>
+</head>
+
+<body>
+  <article>
+    <svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="-5 -5 458 522"><!--!Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+    <path
+    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+  </svg>
+</article>
+<section>
+  <svg version="1.1" baseProfile="basic" id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 300"
+  xml:space="preserve">
+  <style type="text/css">
+    .st0{fill:none;stroke:#0039EE;stroke-width:3;}
+    .st1{font-family:'Black Han Sans';}
+    .st2{font-size:70px;}
+  </style>
+  <text transform="matrix(1 0 0 1 45.9324 163.2759)" class="st0 st1 st2">UI/UX 디자인</text>
+</svg>
+</section>
+</body>
+
+</html>
