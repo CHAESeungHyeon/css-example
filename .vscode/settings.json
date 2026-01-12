@@ -4,5 +4,6 @@
   "github.copilot.nextEditSuggestions.enabled": false,
   "editor.inlineSuggest.edits.allowCodeShifting": "never",
   "editor.inlineSuggest.edits.renderSideBySide": "never",
-  "editor.inlineSuggest.edits.showLongDistanceHint": false
+  "editor.inlineSuggest.edits.showLongDistanceHint": false,
+  "liveServer.settings.port": 5501
 }
